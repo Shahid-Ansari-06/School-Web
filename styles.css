@@ -1,0 +1,166 @@
+body{
+    background: linear-gradient(60deg, #ffffff, #116ecb53, #116ecbbd);
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+.first-page img{
+    height: 75px;
+    width:170px;
+    margin-left: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+    .first-page img{
+        height: 75px;
+        width:170px;
+        margin-left: 20px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .about, .gallery, .educators, .app, .admission{
+      display: none;
+    }}
+.web-header button{
+    cursor: pointer;
+}
+.web-header{
+    background: transparent;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -9px;
+}
+.web-nav{
+    margin-top: 25px;
+}
+.about{
+    margin-left: 35px;
+    margin-top: 30px;
+    font-size: 20px;
+    position: absolute;
+    background: transparent;
+    border-color: transparent;
+    font-weight: bold;
+}
+.gallery{
+    margin-left: 260px;
+    margin-top: 30px;
+    font-size: 20px;
+    position: absolute;
+    background: transparent;
+    border-color: transparent;
+    font-weight: bold;
+}
+.educators{
+    margin-left: 490px;
+    margin-top: 30px;
+    font-size: 20px;
+    position: absolute;
+    background: transparent;
+    border-color: transparent;
+    font-weight: bold;
+}
+.app{
+    margin-left: 665px;
+    margin-top: 30px;
+    font-size: 20px;
+    position: absolute;
+    background: transparent;
+    border-color: transparent;
+    font-weight: bold;
+}
+.admission{
+    background-color: rgb(0, 157, 255);
+    border-radius: 25px;
+    margin-left: 755px;
+    margin-top: 25px;
+    font-size: 20px;
+    padding: 7px 10px;
+    color: #ffffff;
+    border-color: transparent;
+    font-weight: bold;
+    position: absolute;
+}
+.admission:hover{
+    background-color: rgb(0, 255, 255);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.menu-icon {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    width: 30px;
+    height: 25px;
+    z-index: 1001;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .menu-icon div {
+    width: 100%;
+    height: 4px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  .menu-icon.open div:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .menu-icon.open div:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-icon.open div:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding: 60px 20px;
+    transition: left 0.4s ease;
+    z-index: 1000;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .nav-menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  .nav-menu a:hover {
+    color: #00bcd4;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 999;
+    transition: all 0.3s ease;
+  }
+  .nav-menu.open {
+    left: 0;
+  }
+  .overlay.show {
+    display: block;
+  }
+  @media (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+  .nav-menu {
+    display: none;
+  }}
